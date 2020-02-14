@@ -8,15 +8,15 @@
     <title>HOME</title>
 
 </head>
-<body bgcolor="cyan">
+<body bgcolor="white">
     <header class="header">
         <nav class="main_nav">
             <ul>
 
                 {% if user.is_authenticated %}
                 <li>Hello {{user.username}}!</li>
+                <li><a href="{% url 'semesters:post_list' %}">Explore options</a></li>
                 <li><a href="temp1/logout">Logout</a></li>
-                <li><a href="semesters/sems">SELECT SEMESTER</a></li>
                 
                 {% else %}
                 <li><a href="temp1/register">Register</a></li>

@@ -9,14 +9,15 @@ class PostForm(forms.ModelForm):
             "title",
             "page_no",
             "content",
+            "img",
             "book_link",
-            
-            ]
+#            "draft",
+#            "publish",
 
-
-#    model = Book
-#       fields= [
-#            "book",
+        ]
+#        model = Book
+#        fields= [
+#            "sem_link",
 #       ]
 #      model = Subjects 
 #     fields= [

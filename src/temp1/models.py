@@ -6,7 +6,7 @@ class Student(models.Model):
     username = models.CharField(max_length=100)
     password = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
-    img = models.ImageField(upload_to='pics')
+    photo = models.ImageField(null=True, blank=True)
     dept = models.TextField()
     sem = models.IntegerField()
 

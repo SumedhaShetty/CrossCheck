@@ -13,7 +13,7 @@ urlpatterns = [
     path('sems/post_create/',views.post_create, name="post_create"),
     path('sems/post_detail/<int:id>',views.post_detail, name="post_detail"),   
     path('sems/post_list/',views.post_list, name="post_list"),
-    path('sems/post_update/',views.post_update, name="post_update"),
-    path('sems/post_delete/',views.post_delete, name="post_delete"),
+    path('sems/post_update/<int:id>',views.post_update, name="post_update"),
+    path('sems/post_delete/<int:id>',views.post_delete, name="post_delete"),
  
 ]
